@@ -1,11 +1,20 @@
 {
-	"name": "@ibisho/phoshpor",
-	"version": "1.0.0",
+	"name": "@ibisho/phosphor",
+	"version": "0.1.0",
 	"description": "",
 	"main": "dist/phosphor.js",
 	"keywords": ["utility"],
 	"author": "BiShO",
 	"license": "ISC",
+	"scripts": {
+		"build": "tsc",
+		"prepublishOnly": "npm run build"
+	},
+	"homepage": "https://github.com/iBisho/phosphor",
+	"repository": "iBisho/phosphor",
+	"bugs": {
+		"url": "https://github.com/iBisho/phosphor/issues"
+	},
 	"devDependencies": {
 		"typescript": "4.x",
 		"@types/node": "16.x",
