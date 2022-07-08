@@ -11,7 +11,8 @@
 		"noUnusedLocals": true,
 		"moduleResolution": "node",
 		"resolveJsonModule": true,
-		"esModuleInterop": true
+		"esModuleInterop": true,
+		"removeComments": false
 	},
 	"include": [
 		"src"

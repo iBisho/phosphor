@@ -1,15 +1,21 @@
 {
 	"name": "@ibisho/phosphor",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "",
 	"main": "dist/phosphor.js",
+	"types": "dist/phosphor.d.ts",
 	"keywords": ["utility"],
 	"author": "BiShO",
 	"license": "ISC",
 	"scripts": {
 		"build": "tsc",
-		"prepublishOnly": "npm run build"
+		"prepare": "npm run build",
+		"version": "git add -A src",
+		"postversion": "git push && git push --tags"
 	},
+	"files": [
+		"dist/**"
+	],
 	"homepage": "https://github.com/iBisho/phosphor",
 	"repository": "iBisho/phosphor",
 	"bugs": {
