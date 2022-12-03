@@ -13,7 +13,7 @@ export function randomElement<T>(arr: T[]) {
  * @param arr The array to select the elements from.
  * @param times How many elements should be returned.
  */
-export function multipleElements<T>(arr: T[], times: number) {
+export function randomElements<T>(arr: T[], times: number) {
 	const elements = [];
 	for (let x = 0; x < times; x++) elements.push(randomElement(arr));
 	return elements;

@@ -28,7 +28,7 @@ export function chanceFactory<T extends { chance: number }>(arr: T[]) {
 	return {
 		/**
 		 * Select an element from the array.
-		 * @param chance Total chance of the elements. Leave blank for automatic calculation.
+		 * @param totalChance Total chance of the elements. Leave blank for automatic calculation.
 		 */
 		select(
 			totalChance = randomInteger(

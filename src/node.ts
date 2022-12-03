@@ -60,7 +60,6 @@ export async function recursiveCacheDelete(root: string) {
 		const fullPath = join(root, file);
 		if ((await stat(fullPath)).isDirectory()) {
 			await recursiveCacheDelete(fullPath);
-			continue;
 		} else delete require.cache[fullPath];
 	}
 }
