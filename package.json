@@ -1,6 +1,6 @@
 {
 	"name": "@ibisho/phosphor",
-	"version": "1.0.2",
+	"version": "1.1.0",
 	"description": "A little utility pack for myself.",
 	"main": "dist/phosphor.js",
 	"types": "dist/phosphor.d.ts",

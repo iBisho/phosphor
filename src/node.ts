@@ -58,8 +58,7 @@ export function generateHex(byteLength = 20) {
 export async function recursiveCacheDelete(root: string) {
 	for (const file of await readdir(root)) {
 		const fullPath = join(root, file);
-		if ((await stat(fullPath)).isDirectory()) {
-			await recursiveCacheDelete(fullPath);
-		} else delete require.cache[fullPath];
+		if ((await stat(fullPath)).isDirectory()) await recursiveCacheDelete(fullPath);
+		else delete require.cache[fullPath];
 	}
 }
